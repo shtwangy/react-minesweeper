@@ -1,12 +1,11 @@
 import {Config} from "../../types/Config";
-import {FC} from "react";
 
 type Props = {
     config: Config;
     onChangeConfig?: (config: Config) => void;
 }
 
-export const ConfigForm: FC<Props> = ({config, onChangeConfig = () => {}}) => {
+export const ConfigForm = ({config, onChangeConfig = () => {}}: Props) => {
     return (
         <>
             <div>
